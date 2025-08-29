@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!--FONTS-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Dancing+Script:wght@400..700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+ rel="stylesheet">
+</head>
+<body>
+    <img src="images/website_bg.png" class="website_bg">
+    <div class="main_bg_shadow"></div>
+    <div class="main_bg" id="main_bg">
+    <div class="title_deco"></div>
+    <div class="intro_section">
+        <p class="my_title"><span class="rock_t">ROCK</span> <span class="paper_t">PAPER</span> <span class="scissors_t">SCISSORS</span></p>
+        <img src="images/my_logo.png" class="my_logo">
+    </div>
+
+    <div class="play_section">
+        <button class="play_button disappear_play" id="playButton">PLAY</button>
+    </div>
+    <div class="your_max_score disappear_play" id="maxScore">
+        <p id="my_best_score">Best Score: 0</p>
+    </div>
+    <div class="title_deco_2 disappear_play"></div>
+    </div>
+
+
+
+    <div class="main_bg_2 show_now" id="playBackground">
+        <div class="my_buttons">
+        <button class="playable_button p_1" id="rock_button"></button>
+        <button class="playable_button p_2" id="paper_button"></button>
+        <button class="playable_button p_3" id="scissors_button"></button>
+        </div>
+        <p class="score_box s_1" id="playerScore">Your Score: 0</p>
+        <p class="score_box s_2" id="computerScore">PC's Score: 0</p>
+        <img src="images/my_logo.png" class="my_buttons_play">
+
+        <div class="title_deco_3"></div>
+        <p class="game_descriptor" id="text_box">Get 5 points to win! Rock, paper, scissors?</p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
