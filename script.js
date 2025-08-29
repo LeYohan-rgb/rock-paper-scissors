@@ -134,11 +134,11 @@ async function playGame(player_choice) {
     let computer_choice = getComputerChoice();
 
     if (computer_choice == player_choice) {
-    displayText("The PC also chose " +computer_choice+".");
+    displayText("The computer also chose " +computer_choice+".");
     colorStrongOption(computer_choice);
     }
     else {
-    displayText("The PC chose " +computer_choice+".");
+    displayText("The computer chose " +computer_choice+".");
     colorOption(computer_choice);
     }
 
@@ -149,13 +149,13 @@ async function playGame(player_choice) {
     if (final_winner == 0) {
         // PLAYER LOST//
         colorStrongOption(computer_choice);
-        displayText("+1 for the PC!");
+        displayText("The computer gets 1 point!");
         computer_score += 1;
     }
     else if (final_winner == 1) {
         // PLAYER WON//
         colorStrongOption(player_choice);
-        displayText("+1 for you!");
+        displayText("You get 1 point!");
         player_score += 1;
     }
     else {
@@ -174,7 +174,7 @@ async function playGame(player_choice) {
     }
     else if (computer_score >= 5) {
         players_max_score = player_score;
-        displayText("The PC won!");
+        displayText("The computer won!");
         await wait(2000);
         endGame();
     }
